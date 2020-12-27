@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import React, { Component } from 'react'
 import './App.scss';
+import Header from '../../components/Header/Header';
+import getRoutes from '../../routes';
+
 
 export default class App extends Component {
 
@@ -8,13 +10,13 @@ export default class App extends Component {
     this.props.history.push('/category')
   }
 
-
   render(){
     return(
     <div className="App">
-      <header className="App-header">
-        <button className="btn btn-primary" onClick={this.goToCategoryPage.bind(this)}>Navigate</button>
-      </header>
+        <Header></Header>
+        <div>  
+          {getRoutes()}
+        </div>
     </div>
     )}
 }

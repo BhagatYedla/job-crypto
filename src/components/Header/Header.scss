@@ -1,0 +1,42 @@
+.header-logo{
+    display: block;
+    width: 4rem;
+    height: 5rem;
+    background-image: url(./logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+.header{
+    position: relative;
+    z-index: 850;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3.2rem;
+    height: 60px;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.nav-section{
+    width: 80%;
+}
+.nav-items{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .nav-item{
+        margin-left: 2.4rem;
+    }
+}

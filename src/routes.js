@@ -7,8 +7,8 @@ import Category from './containers/Category/category';
 export default () => {
   return (
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/category" component={Category}/>
+      <Route exact path="/" component={Category} />
+      {/* <Route exact path="/category" component={Category}/> */}
 
 
       {/* If none of the above is found then display this */}
