@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import logo from './logo.svg';
-import './Header.scss';
+import '../styles/Header.scss';
 import Web3 from 'web3'
-import Modal from 'react-bootstrap/Modal'
 
 export default class Header extends Component {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import errorPageStyles from './ErrorPages.scss';
+import errorPageStyles from '../../styles/ErrorPages.scss';
 
 export default function NotFound() {
   return (

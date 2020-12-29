@@ -7,14 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux';
-import App from './containers/App/App';
+import App from './App';
+import rootReducer  from './reducers';
 
-
+const store = createStore(rootReducer);
 
 ReactDOM.render(
+  <Provider store={store}>
     <Router history={createBrowserHistory}>
       <App></App>
-    </Router>,
+    </Router>
+  </Provider>,
     document.getElementById('root')
 );
 

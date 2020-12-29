@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router  ,Route , Switch} from "react-router-dom";
-import App from './containers/App/App';
+import { Route , Switch} from "react-router-dom";
 import NotFound from './containers/ErrorPages/NotFound';
 import Category from './containers/Category/category';
 
